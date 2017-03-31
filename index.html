@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Project Escape</title>
+  <!--Stylesheet-->
+  <link rel="stylesheet" type="text/css" href="webapp.css">
+  <!--JavaScript-->
+  <script type="text/javascript" src="webapp.js"></script>
+</head>
+
+<body onload="onLoadHandler();">
+
+<audio controls>
+	<source src="audio/Team Fortress 2 Soundtrack  Right Behind You.mp3"></source>
+<!--	<source src="sounds/music.mp3" type="audio/mpeg"></source>-->
+Your browser can't suppport this audio element.
+</audio>
+
+
+
+  <!-- HTML here-->
+  <!--Add your HTML here-->
+<div class = "cover"><!--Outermost layer-->
+    
+  <div class="whole"><!--The whole game screen-->
+
+      <div class="screen box"><!--The button bar on the top-->
+          <div class="buttons"><!--The button bar on the top-->
+              <strong>Escape</strong>
+			  <input type="button" id="button" value="Quit" onClick="window.close()();"> 
+			  <input type="button" id="restartbutton" value ="Restart" onClick="onLoadHandler();">          
+          </div>
+		  
+ </div>
+
+      <div id="text" class="middle box"><!--The part with all the game texts-->
+          <p id="story"></p>
+		  
+      </div>
+  
+      <div id="choices" class="lower box">
+          <div class="choice buttons"><!--The button bar at the bottom-->
+              <input type="button" class="game functions" id="choice1">
+              <input type="button" class="game functions" id="choice2">
+          </div>
+		  
+	   <div class="progress">
+	  	<progress id="progressBar" value="0" max="19"></progress>
+	  </div>
+	  
+      </div>
+	  
+
+
+  </div>
+</div>
+
+</body>
+</html>
